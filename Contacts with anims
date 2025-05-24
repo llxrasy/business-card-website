@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <style>
+        :root {
+            --primary: #323541;
+            --primary-dark: #0f0f10;
+            --light: #f9f9f9;
+            --dark: #1a1a1a;
+            --gray: #4c5054;
+            --border-radius: 8px;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        header {
+            background-color: var(--dark);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info p {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info strong {
+            color: var(--primary-dark);
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ddd, transparent);
+            margin: 2rem 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.2);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/Проект с анимками.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Давайте свяжемся!</h1>
+        
+        <section class="card">
+            <div class="contact-info">
+                <p><strong>Телефон:</strong>Секрет</p>
+                <p><strong>Email:</strong>Секрет</p>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Форма обратной связи</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Ваш адрес электронной почты</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Ваше полное имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Ваши комментарии</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                </div>
+                
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+        
+        <section class="card">
+            <h2>Мои контакты</h2>
+            <div class="contact-info">
+                <p><strong>Почта:</strong>Секрет</p>
+                <p><strong>Номер:</strong>Секрет</p>
+                <p><strong>Github:</strong> <a href="https://github.com/llxrasy">llxrasy</a></p>
+                <p><strong>Telegram:</strong> <a href="https://t.me/llxrasyuoy">llxrasy</a></p>
+                <p><strong>Вк:</strong> <a href="https://vk.com/llxrasy">Slava Kos</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
