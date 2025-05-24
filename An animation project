@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Визитка Славы Космачёва</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #27346e;
+      --secondary-color: #3d06be;
+      --light-color: #ffffff;
+      --dark-color: #18191b;
+      --text-dark: #30313d;
+      --text-light: #f5f5f5;
+    }
+    
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--text-dark);
+    }
+    
+    header {
+      background-color: var(--dark-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-pills .nav-link {
+      color: var(--text-light);
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-pills .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .hero-section {
+      background-image: url('img/fade.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--text-light);
+      padding: 20px;
+    }
+    
+    .hero-content {
+      max-width: 800px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 20px;
+    }
+    
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .hero-content p {
+      font-size: 1.5rem;
+    }
+    
+    .content-section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .white-bg {
+      background-color: white;
+    }
+    
+    .light-bg {
+      background-color: var(--light-color);
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 40px;
+    }
+    
+    .section-content {
+      max-width: 800px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    
+    .project-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+    
+    .project-image:hover {
+      transform: scale(1.03);
+    }
+    
+    .back-to-top {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      margin: 30px auto;
+      transition: all 0.3s ease;
+    }
+    
+    .back-to-top:hover {
+      background-color: var(--secondary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .section-content {
+        font-size: 1rem;
+      }
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/Для проекта/Контакты с анимками.html" class="nav-link">Мои контакты</a></li>
+        <li class="nav-item"><a href="https://github.com/llxrasy" class="nav-link">Github</a></li>
+        <li class="nav-item"><a href="https://t.me/llxrasyuoy" class="nav-link">Telegram</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <section class="hero-section" id="up">
+    <div class="hero-content">
+      <h1>Визитка Славы Космачёва</h1>
+      <p>Здесь вы найдёте подробную информацию о моих навыках</p>
+    </div>
+  </section>
+
+  <section class="content-section white-bg">
+    <h2 class="section-title">О мне</h2>
+    <div class="section-content">
+      Меня зовут Слава, мне 13 лет. Занимаюсь программированием 5 лет, если считать 4 года на лаборатории электроники и 1 год в Кванториуме.
+    </div>
+  </section>
+
+  <section class="content-section light-bg">
+    <h2 class="section-title">Что я сделал за этот год</h2>
+    <div class="section-content">
+      <img src="img/image (1).png" alt="Игра Змейка" class="project-image">
+      <p>С помощью pygame была написана моя версия игры змейка</p>
+      <p><em>"Это был первый большой проект в Кванториуме"</em></p>
+    </div>
+  </section>
+
+  <section class="content-section white-bg">
+    <div class="section-content">
+      <img src="img/image (2).png" alt="Arduino" class="project-image">
+      <p>Изучение Arduino</p>
+      <p><em>"Изучение Arduino было интересным"</em></p>
+    </div>
+  </section>
+
+  <section class="content-section light-bg">
+    <div class="section-content">
+      <img src="img/image (3).png" alt="HTML и CSS" class="project-image">
+      <p>Изучение HTML и CSS</p>
+      <p><em>"Сейчас вы видите готовый продукт этой темы"</em></p>
+    </div>
+  </section>
+
+  <div style="text-align: center;">
+    <a href="#up" class="back-to-top">Вверх</a>
+  </div>
+</body>
+</html>
